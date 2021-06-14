@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+.accord {
+	background-color: #5ccccc;
+
+}
+
+.accord__item {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	min-height: 50px;
+	transition: background-color 0.2s;
+
+}
+
+.accord__item:hover {
+	background-color: #20a5a5;
+	transition: background-color 0.2s;
+}
+
+.accord__title {
+	display: inline-block;
+	color: #A64B00;
+	font-weight: bold;
+	min-height: 50px;
+}
+
+.accord__text {
+	color: #A64B00;
+	visibility: hidden;
+	max-height: 0;
+}
+
+.accord__text-show {
+	visibility: visible;
+	max-height: fit-content;
+}
+.accord__item+.accord__item {
+	border-top: 2px solid #006363;
+}
